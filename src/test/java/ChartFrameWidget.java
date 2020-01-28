@@ -46,6 +46,20 @@ public class ChartFrameWidget {
                 " \tUS Soybeans\t902.12\t-6.88\t-0.76%" , true);
 
     }
+    @Test
+    public void Commodities2 () {
+        page = new ChartFrame(driver);
+        page.setCur();
+        Assert.assertTrue("Crude Oil WTI\t54.20\t-1.39\t-2.50%\t\t \n" +
+                " \tBrent Oil\t60.62\t-1.42\t-2.29%\t\t \n" +
+                " \tNatural Gas\t1.888\t-0.038\t-1.97%\t\t \n" +
+                " \tGold\t1,571.10\t+5.70\t+0.36%\t\t \n" +
+                " \tSilver\t18.115\t+0.286\t+1.60%\t\t \n" +
+                " \tCopper\t2.683\t-0.043\t-1.58%\t\t \n" +
+                " \tUS Soybeans\t902.12\t-6.88\t-0.76%" , true);
+
+    }
+
 
     @After
     public void quit () {
